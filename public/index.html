@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Countdown Timer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+
+<body>
+    <h3 class='text-center text-warning'>COUNTDOWN TIMER</h3>
+
+    <div class="container text-center">
+
+        <input type="text" class="inputs" id="userSec" placeholder="Enter Seconds">
+        <input type="text" class="inputs" id="userMin" placeholder="Enter Minutes">
+        <button class="sm-btn" onclick="set()">Set</button>
+
+    </div>
+
+    <div class="main">
+        <div class="wrapper">
+            <p>
+                <span id="minutes">00</span>
+                <span class="timer-2">:</span>
+                <span id="seconds">00</span>
+            </p>
+            <button class="timerButton" id="btnStart" onclick="start()">Start</button>
+            <button onclick="pause()" class="timerButton">Stop</button>
+            <button class="timerButton" onclick="reset()">Reset</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
